@@ -1,12 +1,14 @@
 import React from "react";
 import "../styles/Home.css";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 // import banner from "../styles/banner.jpg";
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <div className="banner flex flex-col items-start justify-center bg-cover bg-center rounded-lg mx-4 md:mx-16">
+      {/* Banner Starts */}
+      <div className="banner flex flex-col items-start justify-center bg-cover bg-center rounded-2xl mx-4 md:mx-16">
         <div className="text-white ml-4 md:ml-24">
           <h1 className="text-4xl md:text-6xl font-black my-2 md:my-5 mb-2 md:mb-4">
             Unlimited movies, TV <br />
@@ -25,8 +27,13 @@ const Home = () => {
           </button>
         </div>
       </div>
+      {/* End Banner */}
 
+<div className="py-24"></div>
+      {/* footer start */}
 
+      <Footer/>
+        {/* footer ends */}
     </div>
   );
 };
