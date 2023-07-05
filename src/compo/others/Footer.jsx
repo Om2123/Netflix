@@ -6,7 +6,7 @@ const Footer = () => {
       
       <div className="container mx-auto pr-4 pl-9 md:pr-6 md:pl-6 lg:pr-6 lg:pl-6">
         <p className="text-center mb-4">Questions? Call 000-800-919-1694</p>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
           <div>
             <h4 className=" py-2">FAQ</h4>
             <p className='py-2 text-sm'>Investor Relations</p>

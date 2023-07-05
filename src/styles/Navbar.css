@@ -12,25 +12,29 @@ top: 5px;
 }
 
 
-/* @media screen and (max-width: 320px)  {
-    #nav {
-     
-    height: 11vh;
-    width: 42vh;/* Let the width adjust automatically for mobile */
-    
-
-
-  /* Responsive styles for mobile devices */
 @media screen and (max-width: 768px) {
     #nav {
       width: 386px; /* Let the width adjust automatically for mobile */
     }
     #logo{
         
-    width: 7rem;
+    width: 6rem;
     height: 1.5rem;
   }
   #nav2{
-    width: 181px;
+    width: 190px;
   }
+  #langB{
+
+  }
+  #signbtn{
+
+    font-size: 88% ;
+  }
+  #langC{
+    display: none;
+  }
+  /* .border{
+    display: none;
+  } */
 }

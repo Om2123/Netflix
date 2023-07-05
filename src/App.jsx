@@ -1,10 +1,12 @@
-import Home from "./compo/Home";
+import Home from "./compo/Homepage/Home";
+import MyProvider from "./api_data/MyProvider";
+import Hero from "./compo/contentpage/Hero";
 
 function App() {
   return (
-    <div className="App">
+    <MyProvider>
       <Home />
-    </div>
+    </MyProvider>
   );
 }
 
