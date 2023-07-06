@@ -45,32 +45,33 @@ const Faq = () => {
   ];
   
   return (
-    <div className="p-40 mt-50px text-white">
-      <h2 className="text-5xl font-extrabold text-center mb-5">Frequently Asked Questions</h2>
-      <div className="grid grid-cols-1 gap-4">
-        {faqData.map((faq, index) => (
-          <div
-            key={index}
-            className="bg-gray-700 hover:bg-gray-600  p-6 cursor-pointer"
-            onClick={() => toggleAnswer(index)}
-          >
-            <div className="flex items-center justify-between">
-              <h3 className="text-2xl font-medium">{faq.question}</h3>
-              <span
-                className={`${
-                  expandedIndex === index ? 'transform rotate-45 text-5xl ' : ''
-                } text-white bold text-5xl transition-transform duration-200`}
-              >
-                +
-              </span>
-            </div>
-            {expandedIndex === index && (
-              <p className="mt-2 text-2xl text-gray-100">{faq.answer}</p>
-            )}
+    <div className="p-8 md:px-32 mt-50px text-white">
+    <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-4">Frequently Asked Questions</h2>
+    <div className="grid grid-cols-1 gap-4"> 
+      {faqData.map((faq, index) => (
+        <div
+          key={index}
+          className="bg-[#303a56] hover:bg-gray-600 p-4 md:p-6 cursor-pointer"
+          onClick={() => toggleAnswer(index)}
+        >
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl md:text-2xl font-medium">{faq.question}</h3>
+            <span
+              className={`${
+                expandedIndex === index ? 'transform rotate-45 text-3xl md:text-5xl' : ''
+              } text-white bold text-3xl md:text-5xl transition-transform duration-200`}
+            >
+              +
+            </span>
           </div>
-        ))}
-      </div>
+          {expandedIndex === index && (
+            <p className="mt-2 text-base md:text-2xl text-gray-100">{faq.answer}</p>
+          )}
+        </div>
+      ))}
     </div>
+  </div>
+  
   );
 };
 
