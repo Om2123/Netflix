@@ -105,7 +105,7 @@ const Home = () => {
             <div class="    ">
               <div class="    ">
                 <div class="  mt-2 md:text-2xl font-bold text-white     ">
-                  <p class=" text-3xl md:text-5xl font-black   md:pb-3    ">Watch everywhere</p>
+                  <p class=" text-3xl md:text-5xl font-bold md:font-black   md:pb-3    ">Watch everywhere</p>
                 </div>
                 <div class="    md:text-xl text-white  mt-2    ">
                   <p class="   md:text-xl text-sm ">
@@ -136,7 +136,7 @@ const Home = () => {
             <div class="    ">
               <div class="    ">
                 <div class=" mt-2 md:text-2xl font-bold text-white      ">
-                  <p class="text-3xl md:text-5xl font-black    md:pb-3     ">
+                  <p class="text-3xl md:text-5xl font-bold md:font-black    md:pb-3     ">
                     Create profiles for kids
                   </p>
                 </div>
@@ -169,7 +169,7 @@ const Home = () => {
             <div class="    ">
               <div class="    ">
                 <div class="   mt-2 md:text-2xl font-bold text-white    ">
-                  <p class="    text-3xl md:text-5xl font-black  md:pb-3    ">
+                  <p class="    text-3xl md:text-5xl font-bold md:font-black  md:pb-3    ">
                     Download your shows to watch offline
                   </p>
                 </div>

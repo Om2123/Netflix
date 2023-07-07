@@ -47,7 +47,7 @@ const Navbar = () => {
 
 
 
-                <button className={`bg-red-500 text-white lg:py-2 py-2 px-1 lg:px-4 rounded`} id="signBtn">
+                <button className={`bg-red-600 text-lg text-white px-4 h-8 md:font-bold py-1 rounded`} id="signBtn">
                   Sign Out
                 </button>
               </div>
