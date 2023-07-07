@@ -38,14 +38,11 @@ const Navbar = () => {
 
               <div className="flex items-center  " id="nav2">
 
-                <div className={`mr-4 flex lg:h-8 h-5  items-center ${isMobile ? "" : "border"}   lg:px-5 lg:py-0 text-white `} id="langB">
-                  <img
-                    className="h-6 w-6"
-                    src=""
-                    alt=""
-                  />
-                  <span className="ml-2" id="langC">Eng</span>
-                </div>
+              <button class="flex justify-center items-center bg-black md:w-56 w-28 text-white h-8 sm:rounded-none m-2 mr-6 border rounded">
+                {/* <img class="w-4 mx-1 " src="./assets/globe (1).png" alt="globe"/> */}
+                English
+                {/* <img class="w-3 mx-1 pt-1" src="./assets/down-filled-triangular-arrow.png" alt="drop-down"/> */}
+                </button>
 
 
 

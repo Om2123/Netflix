@@ -43,10 +43,9 @@ const Faq = () => {
         'Netflix offers a vast library of movies, TV shows, documentaries, stand-up specials, and more. It covers various genres and provides personalized recommendations based on your viewing history and preferences.',
     },
   ];
-  
   return (
-    <div className="p-8 md:px-32 mt-50px text-white">
-    <h2 className="text-3xl md:text-5xl font-extrabold text-center mb-4">Frequently Asked Questions</h2>
+    <div className="pt-8 md:px-32 px-12 pb-24 mt-50px text-white">
+    <h2 className="text-3xl md:text-5xl font-extrabold  mb-4">Frequently Asked Questions</h2>
     <div className="grid grid-cols-1 gap-4"> 
       {faqData.map((faq, index) => (
         <div
