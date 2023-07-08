@@ -5,27 +5,24 @@ import logo from "X:/Netflix/Netflix/src/image/logo.png";
 const Navbar = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768);
-    };
+  // useEffect(() => {
+  //   const handleResize = () => {
+  //     setIsMobile(window.innerWidth <= 768);
+  //   };
 
-    handleResize(); // Initial check
-    window.addEventListener("resize", handleResize);
+  //   handleResize(); // Initial check
+  //   window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("resize", handleResize);
+  //   };
+  // }, []);
   return (
     <>
       <div id="navbar">
-        <nav
-          className=" mx-auto "
-          id="nav"
-        >
+        <nav className=" mx-auto " id="nav">
           <div className="container mx-auto px-4">
-            <div className="flex lg:h-20 items-center justify-between py-4" >
+            <div className="flex lg:h-20 items-center justify-between py-4">
               <div className="flex items-center">
                 <img
                   className="lg:h-10 lg:w-36 h-10 w-36 ml-1"
@@ -35,19 +32,25 @@ const Navbar = () => {
                 />
               </div>
 
-
               <div className="flex items-center  " id="nav2">
-
-              <button class="flex justify-center items-center bg-black md:w-56 w-28 text-white h-8 sm:rounded-none m-2 mr-6 border rounded">
-                {/* <img class="w-4 mx-1 " src="./assets/globe (1).png" alt="globe"/> */}
-                English
-                {/* <img class="w-3 mx-1 pt-1" src="./assets/down-filled-triangular-arrow.png" alt="drop-down"/> */}
+                <button class="flex justify-center items-center bg-slate-900 md:bg-black md:w-56 md:w-28 text-white h-7 sm:rounded-none m-2 mr-3 border rounded">
+                  <span class="hidden sm:inline">English</span>
+                  <img
+                    class="w-4 mx-1 sm:hidden"
+                    src="./assets/globe (1).png"
+                    alt=""
+                  />
+                  
+                  <img
+                    class="w-4 mx-1 sm:hidden"
+                    src="./assets/down-filled-triangular-arrow.png"
+                    alt=""
+                  />
                 </button>
 
-
-
-
-                <button className={`bg-red-600 text-lg text-white px-4 h-8 md:font-bold py-1 rounded`} id="signBtn">
+                <button
+                  className={`bg-red-600  text-white px-4 h-8 md:font-thin py-1 rounded`}
+                >
                   Sign Out
                 </button>
               </div>
