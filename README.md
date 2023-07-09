@@ -6,3 +6,8 @@ password -- 12345678 .
 
 
 This web app is just for educational purpose . 
+
+
+The stack i used it
+
+1.Tailwind css 2.firebase 3.React.js - context api , redux , router ,etc.
