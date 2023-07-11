@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
-import MovieBox from "./MovieBox";
 import axios from "X:/Netflix/Netflix/src/api_data/axios";
 import requests from "X:/Netflix/Netflix/src/api_data/request";
 import Rows from "./Rows";
@@ -30,7 +29,8 @@ const Hero = () => {
     <div>
       <Nav/>
       <Banner movie={movie[randomIndex]}/>
-    
+    <div  className="rowBack">
+
       <Rows title="Netflix Originals" isLargeRow="true" fetchUrl={requests.fetchNetflixOriginals} />
        <Rows title="Trending Now"  fetchUrl={requests.fetchTrending} />  
        <Rows title=" Action Movies" fetchUrl={requests.fetchActionMovies} />
@@ -41,6 +41,7 @@ const Hero = () => {
        <Rows title="Romance Movies" isLargeRow="true" fetchUrl={requests.fetchRomanceMovies} />
        <Rows title="Popular Movies" fetchUrl={requests.fetchPopular} />
 
+    </div>
       <Footer/>
     </div>
   );
