@@ -51,7 +51,7 @@ const Navbar = () => {
                 <button
                   className={`bg-red-600  text-white px-4 h-8 md:font-thin py-1 rounded`}
                 >
-                  Sign Out
+                  Sign In
                 </button>
               </div>
             </div>

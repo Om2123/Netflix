@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <footer className="text-white lg:px-24 lg:pb-24" style={{color:"rgba(255,255,255,0.7);"}} >
+    <footer className="text-white lg:px-24 lg:pb-24 " style={{color:"rgba(255,255,255,0.7);"}} >
       
       <div className="container mx-auto pr-4 pl-9 md:pr-6 md:pl-6 lg:pr-6 lg:pl-6">
         <p className="text-center mb-4">Questions? Call 000-800-919-1694</p>
