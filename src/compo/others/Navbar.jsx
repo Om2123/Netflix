@@ -1,24 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../styles/Navbar.css"
 import logo from "../../image/logo.png"
+import SignIn from "../page/SignIn";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  // const [isMobile, setIsMobile] = useState(false);
+  const [signIn, setSignIn] = useState(false);
 
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth <= 768);
-  //   };
-
-  //   handleResize(); // Initial check
-  //   window.addEventListener("resize", handleResize);
-
-  //   return () => {
-  //     window.removeEventListener("resize", handleResize);
-  //   };
-  // }, []);
   return (
-    <>
+  
+       
       <div id="navbar">
         <nav className=" mx-auto " id="nav">
           <div className="container mx-auto px-4">
@@ -47,18 +38,20 @@ const Navbar = () => {
                     alt=""
                   />
                 </button>
-
+      <Link  to={"/SignIn"} >
                 <button
-                  className={`bg-red-600  text-white px-4 h-8 md:font-thin py-1 rounded`}
-                >
+                 onClick={() => setSignIn(true)}
+                 className={`bg-red-600  text-white px-4 h-8 md:font-thin py-1 rounded`}
+                 >
                   Sign In
                 </button>
+                  </Link>
               </div>
             </div>
           </div>
         </nav>
       </div>
-    </>
+     
   );
 };
 

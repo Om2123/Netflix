@@ -64,7 +64,7 @@ const Rows = ({ title, fetchUrl, isLargeRow = false }) => {
                     className={`md:h-[12rem] md:w-[40rem] h-40 rounded py-5 px-1 ${
                       isLargeRow && "md:h-[19rem] p-5 transform w-36 md:w-[30rem] row_imgLarge"
                     }`}
-                    src={`https://image.tmdb.org/t/p/original/${
+                    src={`${process.env.REACT_APP_IMAGE_BASE_URL}${
                       isLargeRow ? movie.poster_path : movie.backdrop_path
                     }`}
                     alt={movie.title}
