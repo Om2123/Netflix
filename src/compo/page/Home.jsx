@@ -1,5 +1,5 @@
 import React, {  useState } from "react";
-import "X:/Netflix/Netflix/src/styles/Home.css";
+import "../../styles/Home.css"
 import Navbar from "../others/Navbar";
 import Footer from "../others/Footer";
 import Faq from "../../firebase/Faq";

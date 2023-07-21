@@ -1,14 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Nav from "./Nav";
-import axios from "X:/Netflix/Netflix/src/api_data/axios";
-import requests from "X:/Netflix/Netflix/src/api_data/request";
+import axios from "../../api_data/axios"
+import requests from "../../api_data/request"
 import Rows from "./Rows";
 import Footer from "./Footer";
 import Banner from "./Banner";
 
 
 const Hero = () => {
-  // document.body.style.backgroundColor = "white";
   
 
     const [movie, setMovie] = useState([]);

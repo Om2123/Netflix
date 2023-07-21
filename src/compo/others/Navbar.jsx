@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
-import "X:/Netflix/Netflix/src/styles/Navbar.css";
-import logo from "X:/Netflix/Netflix/src/image/logo.png";
+import React from "react";
+import "../../styles/Navbar.css"
+import logo from "../../image/logo.png"
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
   // useEffect(() => {
   //   const handleResize = () => {

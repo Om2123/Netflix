@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "X:/Netflix/Netflix/src/styles/Home.css";
+import "../../styles/Home.css"
 import Navbar from "../others/Navbar";
 import Footer from "../others/Footer";
-import axios from "X:/Netflix/Netflix/src/api_data/axios";
-import requests from "X:/Netflix/Netflix/src/api_data/request";
+import axios from "../../api_data/axios"
+import requests from "../../api_data/request"
 import Faq from "../../firebase/Faq";
 
 

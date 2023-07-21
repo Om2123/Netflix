@@ -15,11 +15,11 @@ const Banner = (props) => {
       }}
       className="object-contain  h-[82vh] max-sm:w-screen  text-white relative "
     >
-      <div className="ml-20 pt-32 h-48">
-        <h1 className="text-7xl font-bold pb-1">
+      <div className="md:ml-20 md:pt-32 md:h-48 max-sm:pt-60 max-sm:relative max-sm:top-1/4 max-sm:px-2" >
+        <h1 className="text-7xl max-sm:text-4xl font-bold pb-1">
           {props.movie?.title || props.movie?.name || props.movie?.originalname}
         </h1>
-        <h1 className="pt-4 max-w-sm text-lg ml-2 h-20 w-96">
+        <h1 className="pt-4 max-w-sm  text-lg ml-2 h-20 w-96">
           {truncate(props.movie?.overview, 100)}
         </h1>
 
@@ -31,7 +31,6 @@ const Banner = (props) => {
             My List
           </button>
         </div>
-        
       </div>
 
       <div

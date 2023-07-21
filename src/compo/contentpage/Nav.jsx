@@ -16,7 +16,7 @@ const Nav = () => {
   }, []);
   return (
     <header
-      className={`flex justify-between fixed z-50 w-full max-sm:p-4 hover:bg-[#141414] md:px-5 md:py-3 header ${
+      className={`flex justify-between fixed z-50 md:w-full max-sm:w-screen max-sm:p-4 hover:bg-[#141414] md:px-5 md:py-3 header ${
         show ? 'bg-[#141414] ' : ''
       }`}
     >
