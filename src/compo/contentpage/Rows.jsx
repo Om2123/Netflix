@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import axios from "X:/Netflix/Netflix/src/api_data/axios";
+import React, {  useRef } from 'react';
+import axios from "../../api_data/axios"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
@@ -7,7 +7,7 @@ import Slider from "react-slick";
 
 const Rows = ({title , fetchUrl , isLargeRow= false}) => {
     const [movies , setMovies] = React.useState([]);
-    const [loadedImages, setLoadedImages] = useState([]);
+    // const [loadedImages, setLoadedImages] = useState([]);
 
     React.useEffect(() => {
         async function fetchData() {

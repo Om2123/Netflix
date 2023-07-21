@@ -2,7 +2,7 @@ import Home from "./compo/page/Home";
 import MyProvider from "./api_data/MyProvider";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import SignIn from "./compo/page/SignIn";
-import Hero from "X:/Netflix/Netflix/src/compo/contentpage/Hero.jsx";
+import Hero from "./compo/contentpage/Hero";
 import { useEffect, useState } from "react";
 import { auth } from "./firebase/firebase";
 function App() {

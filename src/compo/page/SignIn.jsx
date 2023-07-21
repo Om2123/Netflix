@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import logo from "X:/Netflix/Netflix/src/image/logo.png";
+import logo from "../../image/logo.png";
 import Footer from "../others/Footer";
 import { auth } from "../../firebase/firebase";
 const SignIn = () => {
