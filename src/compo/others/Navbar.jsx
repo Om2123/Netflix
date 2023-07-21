@@ -25,7 +25,7 @@ const Navbar = () => {
 
               <div className="flex items-center  " id="nav2">
                 <button class="flex justify-center items-center bg-slate-900 md:bg-black md:w-56 md:w-28 text-white h-7 sm:rounded-none m-2 mr-3 border rounded">
-                  <span class="hidden sm:inline">English</span>
+                  <span class="hidden sm:inline">English and</span>
                   <img
                     class="w-4 mx-1 sm:hidden"
                     src="./assets/globe (1).png"
